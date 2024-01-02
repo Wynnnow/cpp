@@ -17,6 +17,7 @@ link_directories(${CMAKE_SOURCE_DIR}/thirdLib/lib)
 # 添加Google Test 框架的链接库
 link_libraries(gtest)
 link_libraries(gtest_main)
+link_libraries(spdlog)
 
 # 指定项目可执行文件 cpp 项目的名称， main.cpp 项目源代码文件
-add_executable(cpp main.cpp)
+add_executable(cpp main.cpp Logger.h)
